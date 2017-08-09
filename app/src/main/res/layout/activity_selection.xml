@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dBackground"
+    android:orientation="vertical"
+    tools:context="com.preons.pranav.mumbailocal.SelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dPadding"
+            android:text="@string/select_station"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/western" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/from"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:windowBackground"
+        android:drawableLeft="@drawable/ic_from"
+        android:drawableStart="@drawable/ic_from"
+        android:gravity="center"
+        android:onClick="clicks"
+        android:padding="@dimen/dPadding"
+        android:scaleY="1.1" />
+
+    <TextView
+        android:id="@+id/to"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dPadding"
+        android:background="?android:windowBackground"
+        android:drawableLeft="@drawable/ic_to"
+        android:drawableStart="@drawable/ic_to"
+        android:gravity="center"
+        android:onClick="clicks"
+        android:padding="@dimen/dPadding" />
+
+    <TextView
+        android:id="@+id/platform"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dPadding"
+        android:visibility="gone"
+        android:background="?android:windowBackground"
+        android:drawableLeft="@drawable/ic_for"
+        android:drawableStart="@drawable/ic_for"
+        android:gravity="center"
+        android:onClick="clicks"
+        android:padding="@dimen/dPadding"
+        />
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/station_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:divider="@android:color/transparent" />
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</TableLayout>

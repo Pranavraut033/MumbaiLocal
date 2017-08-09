@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/western"
+        android:icon="@mipmap/ic_western"
+        android:title="@string/western" />
+
+    <item
+        android:id="@+id/central"
+        android:icon="@mipmap/ic_central"
+        android:title="@string/central" />
+
+    <item
+        android:id="@+id/harbour"
+        android:icon="@mipmap/ic_harbour"
+        android:title="@string/harbour" />
+
+</menu>

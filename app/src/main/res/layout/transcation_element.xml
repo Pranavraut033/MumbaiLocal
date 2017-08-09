@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dPadding"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:padding="@dimen/dPadding"
+            android:id="@+id/p_id"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/ticket_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dPadding"
+                android:layout_marginRight="@dimen/dPadding"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/from"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dPadding" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/left_indicator"
+                    android:src="@mipmap/ic_left_arrow" />
+
+                <TextView
+                    android:id="@+id/to"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dPadding" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/for_s"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dPadding"
+                android:layout_marginRight="@dimen/dPadding"
+                android:drawableLeft="@drawable/ic_for"
+                android:drawablePadding="@dimen/dPadding"
+                android:drawableStart="@drawable/ic_for"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dPadding"
+                android:visibility="gone" />
+        </TableLayout>
+    </LinearLayout>
+
+    <TableRow>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:padding="@dimen/dPadding"
+            android:text="@string/paid_via"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/method"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:padding="@dimen/dPadding"
+            android:text="@string/amount"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:padding="@dimen/dPadding"
+            android:text="@string/passenger"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/no_of_passenger"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:padding="@dimen/dPadding"
+            android:text="@string/generated_on"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:padding="@dimen/dPadding"
+            android:text="@string/transaction_id"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/unique_id"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </TableRow>
+
+
+</TableLayout>

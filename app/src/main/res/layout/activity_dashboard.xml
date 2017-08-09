@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/dBackground"
+    android:layout_height="match_parent"
+    tools:context="com.preons.pranav.mumbailocal.Dashboard">
+    <LinearLayout
+        android:padding="@dimen/dPadding"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:padding="@dimen/dPadding"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/full_name"
+                android:textColor="@color/colorAccent" />
+        <TextView
+            android:id="@+id/ticket"
+            style="@style/dTextMenu"
+            android:drawableLeft="@mipmap/ic_ticket"
+            android:drawableStart="@mipmap/ic_ticket"
+            android:text="@string/ticketing_booking" />
+
+        <TextView
+            android:id="@+id/platform"
+            style="@style/dTextMenu"
+            android:drawableLeft="@mipmap/ic_platform"
+            android:drawableStart="@mipmap/ic_platform"
+            android:text="@string/platform_ticket" />
+
+        <TextView
+            android:id="@+id/history"
+            style="@style/dTextMenu"
+            android:drawableLeft="@mipmap/ic_last_transcations"
+            android:drawableStart="@mipmap/ic_last_transcations"
+            android:text="@string/last_transactions" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/create"
+            style="@style/dTextMenu"
+            android:drawableLeft="@mipmap/ic_database"
+            android:drawableStart="@mipmap/ic_database"
+            android:text="@string/create_users_database" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/create1"
+            style="@style/dTextMenu"
+            android:drawableLeft="@mipmap/ic_database"
+            android:drawableStart="@mipmap/ic_database"
+            android:text="@string/create_transactions_database" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
